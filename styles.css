@@ -1,0 +1,200 @@
+/* General Styling */
+
+html{
+    font-size: 62.5%;
+    color: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.grid{
+    display: grid;
+    max-width: (100%, 30.75rem);
+}
+
+p{
+    color: hsl(241, 100%, 89%);
+    font-size: 1.8rem;
+}
+
+span{
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+
+/* Result Styling */
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 0% 5% 5%;
+    min-height: 45rem;
+}
+
+.resultColor{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+#yourResult{
+    margin: 2rem 0 2.5rem 0;
+}
+
+#yourResult{
+    color: hsl(241, 100%, 89%);
+}
+
+#--76{
+    margin: 0;
+    font-size: 5rem;
+}
+
+.resultCircle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    height: 14rem;
+    width: 14rem;
+}
+
+.resultCircleColor{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+#resultPara{
+    margin: 2rem 0 4rem 0;
+    padding: 0 4rem 0 4rem;
+}
+
+#great{
+    margin: 3rem 0 0 0;
+}
+
+/* Summary Styling */
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 1.5rem;
+    width: 30.15rem;
+    height: 5.5rem;
+    border-radius: 10%;
+    margin-bottom: 1.5rem;
+}
+
+#card{
+    display: flex;
+    align-items: center;
+}
+
+#yourSummary{
+    padding-right: 65%;
+    margin-bottom: 2.5rem;
+    color: hsl(224, 30%, 27%);
+}
+
+.iconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 3rem;
+    height: 3rem;
+    padding-right: 1rem;
+}
+
+.-cardReaction {
+    background-color: hsl(0, 100%, 67%, .1);
+}
+
+.reactionColor{
+    color: hsl(0, 100%, 67%);
+}
+
+.-cardMemory {
+    background-color: hsl(39, 100%, 56%, .1);
+}
+
+.memoryColor{
+    color: hsl(39, 100%, 56%);
+}
+
+.-cardVerbal{
+    background-color: hsl(166, 100%, 37%, .1);
+}
+
+.verbalColor{
+    color: hsl(166, 100%, 37%);
+}
+
+.-cardVisual{
+    background-color: hsl(234, 85%, 45%, .1);
+}
+
+.visualColor{
+    color: hsl(234, 85%, 45%);;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonColor{
+    color: hsl(221, 100%, 96%);
+    border-radius: 10% 10% 10% 10%;
+    background-color: hsl(224, 30%, 27%);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px){
+    
+    .grid{
+        
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 50.10rem;
+        min-width: 70.35rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .result{
+        border-radius: 5% 5% 5% 5%;
+        width: 33.31rem;
+        text-align: center;
+    }
+
+    .button:hover {
+        cursor: pointer;
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+    
+}
